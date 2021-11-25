@@ -44,16 +44,22 @@ h1{
     max-height: 1000em;
     transform: scaleY(1);
 }
-iframe{
+a{
     all: unset;
-    padding: 0.25em;
-    background-color: rgb(0, 255, 242);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 1em 2em;
+    border: 0.2em solid rgb(255, 54, 238);
+    background-color: rgb(0, 0, 0);
     border-radius: 0.5em;
     margin: 1em 0;
     transition: 0.4s;
+    cursor: pointer;
 }
-iframe:hover{
-    background-color: rgb(255, 0, 212);
+a:hover{
+    background-color: rgb(80, 255, 232);
+    color: black;
 }
 /*IMAGENES DE FONDO DE LOS H1*/
 #zelda-wind-waker-h1{
