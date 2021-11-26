@@ -68,8 +68,11 @@ a:hover{
     background-image: url("./img/miniatura-zelda-wind-waker.png");
 }
 #super-mario-galaxy-h1{
-    background-image: url("./img/miniatura-super-mario-galaxy-.png");
+    background-image: url("./img/miniatura-super-mario-galaxy.png");
 }
 #rayman-legends-h1{
     background-image: url("./img/miniatura-rayman-legends.png");
+}
+#super-mario-sunshine-h1{
+    background-image: url("./img/miniatura-super-mario-sunshine.png");
 }
