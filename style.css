@@ -73,6 +73,12 @@ a:hover{
 #zelda-wind-waker-h1{
     background-image: url("./img/miniatura-zelda-wind-waker.png");
 }
+#dark-souls-h1{
+    background-image: url("./img/miniatura-dark-souls.jpg");
+}
+#league-of-legends-h1{
+    background-image: url("./img/miniatura-league-of-legends.jpg");
+}
 #super-mario-galaxy-h1{
     background-image: url("./img/miniatura-super-mario-galaxy.png");
 }
