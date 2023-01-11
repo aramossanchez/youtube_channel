@@ -1,4 +1,4 @@
-var listasVideos = document.getElementsByClassName("lista-videos");
+var listasVideos = document.getElementsByClassName("lista_videos");
 
 const abrirListaVideos = (lista) =>{
     if (document.getElementById(lista).classList.contains("cerrada")) {
