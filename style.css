@@ -3,14 +3,28 @@
     margin: 0;
     padding: 0;
 }
-body{
+body {
+    background-color: rgb(48, 0, 49);
+}
+.container {
     width: 100%;
     height: 100vh;
-    background-color: rgb(48, 0, 49);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+}
+.title_app {
+    display: none;
+}
+.close_lista_videos {
+    display: none;
+}
+.h1_container {
+    width: 90vw;
+    border-radius: 10px;
+    height: 100px;
+    background-size: cover;
 }
 h1{
     text-align: center;
@@ -96,4 +110,167 @@ a:hover{
 }
 #brawl-stars-h1{
     background-image: url("./img/miniatura-brawl-stars.png");
+}
+
+@media (max-width: 800px) {
+    body {
+        background-color: white;
+    }
+    .container {
+        margin-top: 50px;
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    }
+    .contenedor_videos{
+        margin-bottom: 60px;
+        width: 90px;
+        height: 90px;
+        border-radius: 100em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: red;
+        outline: 3px solid black;
+    }
+    .h1_container {
+        position: relative;
+        width: 90px;
+        height: 90px;
+        border-radius: 100em;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: 50%;
+    }
+    h1 {
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px 8px rgb(255, 174, 0);
+        position: absolute;
+        top: 90px;
+        font-size: 10px;
+        width: auto;
+    }
+    .title_app {
+        display: block;
+        width: 100vw;
+        top: 15px;
+        text-align: center;
+        color: #ff60f7;
+        text-shadow: 1px 1px 8px rgb(32, 255, 236);
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        font-size: 25px;
+    }
+    .lista_videos{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 95vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+        transition: 0.3s;
+        margin: 0;
+        background-color: rgb(255, 255, 255);
+        overflow-y: auto;
+        box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.39);
+        z-index: 10;
+    }
+    .close_lista_videos {
+        display: block;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .close_lista_videos>img {
+        width: 50px;
+        height: 50px;
+    }
+    a{
+        all: unset;
+        margin: 10px;
+        text-align: center;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: white;
+        border: 0.2em solid rgb(255, 54, 238);
+        background-color: rgb(0, 0, 0);
+        border-radius: 0.5em;
+        transition: 0.4s;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+    .cerrada{
+        left: -1000em;
+        max-width: auto;
+        transform: none;
+    }
+    .abierta{
+        left: 0;
+        max-width: auto;
+        transform: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width: 610px) {
+    .container {
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    }
+    .lista_videos{
+        grid-template-columns: 1fr 1fr;
+    }
 }
