@@ -137,7 +137,6 @@ a:hover{
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        background-color: red;
         outline: 3px solid black;
     }
     .h1_container {
@@ -272,5 +271,27 @@ a:hover{
     }
     .lista_videos{
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 402px) {
+    .container {
+        width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-evenly;
+        justify-items: center;
+        align-content: space-evenly;
+        align-items: center;
+    }
+    .lista_videos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 345px) {
+    .container {
+        margin-top: 70px;
     }
 }
