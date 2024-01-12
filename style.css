@@ -123,14 +123,29 @@ a:hover{
 
 @media (max-width: 800px) {
     body {
-        background-color: white;
+        background-color: rgb(56, 56, 56);
+    }
+    .title_app {
+        display: block;
+        width: 100vw;
+        text-align: center;
+        background: linear-gradient(to right, rgb(255, 54, 238) , rgb(80, 255, 232));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-shadow: none;
+        margin: 0;
+        padding: 20px 0;
+        font-size: 25px;
+        top: 0;
+        border-radius: 0;
+        position: relative;
     }
     .container {
-        margin-top: 50px;
         width: 100vw;
-        height: auto;
+        height: 100%;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         justify-content: space-evenly;
         justify-items: center;
         align-content: space-evenly;
@@ -138,47 +153,39 @@ a:hover{
     }
     .contenedor_videos{
         margin-bottom: 60px;
-        width: 90px;
-        height: 90px;
-        border-radius: 100em;
+        width: 33.33vw;
+        border-radius: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        outline: 3px solid black;
+        outline: 0;
+        margin: 0;
     }
     .h1_container {
         position: relative;
-        width: 90px;
-        height: 90px;
-        border-radius: 100em;
+        width: 100%;
+        height: 200px;
+        border-radius: 0;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         background-size: cover;
         background-position: 50%;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        border: 2px solid black;
     }
-    h1 {
+    .h1_container h1 {
         color: rgb(0, 0, 0);
         text-shadow: 1px 1px 8px rgb(255, 174, 0);
-        position: absolute;
-        top: 90px;
-        font-size: 10px;
+        font-size: 14px;
         width: auto;
-    }
-    .title_app {
-        display: block;
-        width: 100vw;
-        top: 15px;
-        text-align: center;
-        color: #ff60f7;
-        text-shadow: 1px 1px 8px rgb(32, 255, 236);
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        font-size: 25px;
+        background: rgb(32,255,236);
+        background: linear-gradient(90deg, rgba(32,255,236,1) 0%, rgba(255,96,247,1) 100%, rgba(252,252,252,1) 100%);
+        padding: 5px 10px;
     }
     .lista_videos{
         position: absolute;
@@ -241,66 +248,13 @@ a:hover{
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 480px) {
+    
     .container {
-        width: 100vw;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: space-evenly;
-        align-items: center;
-    }
-}
-
-@media (max-width: 610px) {
-    .container {
-        width: 100vw;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: space-evenly;
-        align-items: center;
-    }
-}
-
-@media (max-width: 500px) {
-    .container {
-        width: 100vw;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: space-evenly;
-        align-items: center;
-    }
-    .lista_videos{
         grid-template-columns: 1fr 1fr;
     }
-}
-
-@media (max-width: 402px) {
-    .container {
-        width: 100vw;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: space-evenly;
-        align-items: center;
-    }
-    .lista_videos{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 345px) {
-    .container {
-        margin-top: 70px;
+    
+    .contenedor_videos{
+        width: 50vw;
     }
 }
