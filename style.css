@@ -46,7 +46,10 @@ h1{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.lista_videos{
+.portada-lista-videos {
+    display: none;
+}
+/* .lista_videos{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -55,7 +58,7 @@ h1{
     flex-wrap: wrap;
     transition: 0.3s;
     margin: 1em 0;
-}
+} */
 .cerrada{
     max-height: 0;
     transform: scaleY(0);
@@ -84,41 +87,44 @@ a:hover{
     color: black;
 }
 /*IMAGENES DE FONDO DE LOS H1*/
-#zelda-wind-waker-h1{
+#zelda-wind-waker-h1, #zelda-wind-waker-portada{
     background-image: url("./img/miniatura-zelda-wind-waker.png");
 }
-#dark-souls-h1{
+#dark-souls-h1, #dark-souls-portada{
     background-image: url("./img/miniatura-dark-souls.jpg");
 }
-#league-of-legends-h1{
+#league-of-legends-h1, #league-of-legends-portada{
     background-image: url("./img/miniatura-league-of-legends.jpg");
 }
-#skyrim-h1{
+#skyrim-h1, #skyrim-portada{
     background-image: url("./img/miniatura-skyrim.jpg");
 }
-#albacete-h1{
+#albacete-h1, #albacete-portada{
     background-image: url("./img/miniatura-albacete.png");
 }
-#darksouls2-h1{
+#darksouls2-h1, #darksouls2-portada{
     background-image: url("./img/miniatura-darksouls2.jpg");
 }
-#super-mario-galaxy-h1{
+#super-mario-galaxy-h1, #super-mario-galaxy-portada{
     background-image: url("./img/miniatura-super-mario-galaxy.png");
 }
-#rayman-legends-h1{
+#rayman-legends-h1, #rayman-legends-portada{
     background-image: url("./img/miniatura-rayman-legends.png");
 }
-#super-mario-sunshine-h1{
+#super-mario-sunshine-h1, #super-mario-sunshine-portada{
     background-image: url("./img/miniatura-super-mario-sunshine.png");
 }
-#slime-rancher-h1{
+#slime-rancher-h1, #slime-rancher-portada{
     background-image: url("./img/miniatura-slime-rancher.png");
 }
-#pikmin-3-deluxe-h1{
+#pikmin-3-deluxe-h1, #pikmin-3-deluxe-portada{
     background-image: url("./img/miniatura-pikmin-3-deluxe.png");
 }
-#brawl-stars-h1{
+#brawl-stars-h1, #brawl-stars-portada{
     background-image: url("./img/miniatura-brawl-stars.png");
+}
+#pokemon-reminiscencia-h1, #pokemon-reminiscencia-portada{
+    background-image: url("./img/miniatura-pokemon-reminiscencia.png");
 }
 
 @media (max-width: 800px) {
@@ -188,38 +194,61 @@ a:hover{
         padding: 5px 10px;
     }
     .lista_videos{
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
-        width: 95vw;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: space-evenly;
-        justify-items: center;
-        align-content: space-evenly;
-        align-items: center;
-        transition: 0.3s;
-        margin: 0;
-        background-color: rgb(255, 255, 255);
-        overflow-y: auto;
-        box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.39);
-        z-index: 10;
-    }
-    .close_lista_videos {
-        display: block;
-        margin: 10px;
+        width: 100vw;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: start;
+        transition: 0.3s;
+        margin: 0;
+        background-color: rgb(56, 56, 56);
+        overflow-y: auto;
+        z-index: 10;
+        box-sizing: border-box;
+    }
+    .portada-lista-videos {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        width: 100vw;
+        height: 50vh;
+        min-height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .portada-lista-videos h1 {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.671);
+        border-radius: 0;
+    }
+    .close_lista_videos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        margin: 5px;
         padding: 5px 10px;
-        text-align: center;
         font-weight: bold;
+        gap: 10px;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }
+    .portada-lista-videos .close_lista_videos{
+        background-color: rgba(0, 0, 0, 0.671);
     }
     .close_lista_videos>img {
-        width: 50px;
-        height: 50px;
+        width: 25px;
+        height: 20px;
+    }
+    .close_lista_videos h1{
+        width: auto;
+        font-size: 16px;
+        background-color: transparent;
     }
     a{
         all: unset;
@@ -236,14 +265,45 @@ a:hover{
         padding: 5px 10px;
         cursor: pointer;
     }
+    .links-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        padding: 10px;
+        gap: 10px;
+        overflow-y: auto;
+        box-sizing: border-box;
+    }
+    
+    .links-container a{
+        all: unset;
+        height: 50px;
+        width: 50px;
+        font-size: 25px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: white;
+        border: 0.2em solid rgb(255, 54, 238);
+        background-color: rgb(0, 0, 0);
+        border-radius: 0.5em;
+        transition: 0.4s;
+        padding: 5px 10px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .cerrada{
         left: -1000em;
-        max-width: auto;
         transform: none;
     }
     .abierta{
         left: 0;
-        max-width: auto;
         transform: none;
     }
 }
