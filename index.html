@@ -14,6 +14,38 @@
     <div class="container">
 
 
+        <!-- VIDEOS DE PALWORLD -->
+        <div class="contenedor_videos" id="palworld-contenedor">
+            <div id="palworld-h1" onclick="abrirListaVideos('palworld-lista')" class="h1_container">
+                <h1>Palworld</h1>
+            </div>
+            <div id="palworld-lista" class="lista_videos cerrada">
+                <div id="palworld-portada" class="portada-lista-videos">
+                    <div class="close_lista_videos" onclick="abrirListaVideos('palworld-lista')">
+                        <img src="/img/arrow.png" alt="Botón cerrar">
+                        <h1>Volver</h1>
+                    </div>
+                    <h1>Palworld</h1>
+                </div>
+                <div id="links-container-palworld" class="links-container"></div>
+            </div>
+        </div>
+        <!-- VIDEOS DE TINYKIN -->
+        <div class="contenedor_videos" id="tinykin-contenedor">
+            <div id="tinykin-h1" onclick="abrirListaVideos('tinykin-lista')" class="h1_container">
+                <h1>Tinykin</h1>
+            </div>
+            <div id="tinykin-lista" class="lista_videos cerrada">
+                <div id="tinykin-portada" class="portada-lista-videos">
+                    <div class="close_lista_videos" onclick="abrirListaVideos('tinykin-lista')">
+                        <img src="/img/arrow.png" alt="Botón cerrar">
+                        <h1>Volver</h1>
+                    </div>
+                    <h1>Tinykin</h1>
+                </div>
+                <div id="links-container-tinykin" class="links-container"></div>
+            </div>
+        </div>
         <!-- VIDEOS DE POKEMON REMINISCENCIA -->
         <div class="contenedor_videos" id="pokemon-reminiscencia-contenedor">
             <div id="pokemon-reminiscencia-h1" onclick="abrirListaVideos('pokemon-reminiscencia-lista')" class="h1_container">
@@ -27,8 +59,7 @@
                     </div>
                     <h1>Pokémon Reminiscencia</h1>
                 </div>
-                <div class="links-container">
-                    <h1>PRÓXIMAMENTE</h1>
+                <div id="links-container-pokemon-reminiscencia" class="links-container">
                 </div>
             </div>
         </div>
@@ -45,9 +76,7 @@
                     </div>
                     <h1>Skyrim</h1>
                 </div>
-                <div class="links-container">
-                    <h1>PRÓXIMAMENTE</h1>
-                </div>
+                <div id="links-container-skyrim" class="links-container"></div>
             </div>
         </div>
         <!-- VIDEOS DE ALBACETE WARRIOR -->
@@ -63,9 +92,7 @@
                     </div>
                     <h1>Albacete Warrior</h1>
                 </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=XpGYPtDZsp4">1</a>
-                </div>
+                <div id="links-container-albacete" class="links-container"></div>
             </div>
         </div>
         <!-- VIDEOS DE DARK SOULS 2 -->
@@ -164,9 +191,7 @@
                     </div>
                     <h1>League of Legends</h1>
                 </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=M-QIR2ZroSY">1</a>
-                    <a href="https://www.youtube.com/watch?v=Z61mP26d64Q">2</a>
+                <div id="links-container-league-of-legends" class="links-container ">
                 </div>
             </div>
         </div>
@@ -425,5 +450,16 @@
     </div>
 </body>
 <script src="./script.js"></script>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        cargarLinksDesdeJSON('../links/Palworld.json', 'links-container-palworld');
+        cargarLinksDesdeJSON('../links/Tinykin.json', 'links-container-tinykin');
+        cargarLinksDesdeJSON('../links/PokemonReminiscencia.json', 'links-container-pokemon-reminiscencia');
+        cargarLinksDesdeJSON('../links/Skyrim.json', 'links-container-skyrim');
+        cargarLinksDesdeJSON('../links/AlbaceteWarrior.json', 'links-container-albacete');
+        // FALTA EL RESTO DE JUEGOS
+        cargarLinksDesdeJSON('../links/LeagueOfLegends.json', 'links-container-league-of-legends');
+        // FALTA EL RESTO DE JUEGOS
+    });
+</script>
 </html>

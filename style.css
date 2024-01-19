@@ -126,6 +126,12 @@ a:hover{
 #pokemon-reminiscencia-h1, #pokemon-reminiscencia-portada{
     background-image: url("./img/miniatura-pokemon-reminiscencia.png");
 }
+#tinykin-h1, #tinykin-portada{
+    background-image: url("./img/miniatura-tinykin.jpg");
+}
+#palworld-h1, #palworld-portada{
+    background-image: url("./img/miniatura-palworld.jpg");
+}
 
 @media (max-width: 800px) {
     body {

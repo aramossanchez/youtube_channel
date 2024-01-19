@@ -1,6 +1,6 @@
 var listasVideos = document.getElementsByClassName("lista_videos");
 
-const abrirListaVideos = (lista) =>{
+const abrirListaVideos = (lista) => {
     if (document.getElementById(lista).classList.contains("cerrada")) {
         for (let i = 0; i < listasVideos.length; i++) {
             listasVideos[i].classList.remove("abierta");
@@ -18,3 +18,25 @@ const abrirListaVideos = (lista) =>{
         return;
     }
 }
+
+async function cargarLinksDesdeJSON(urlJSON, idContainer) {
+    try {
+        const response = await fetch(urlJSON);
+        const data = await response.json();
+        const linksContainer = document.getElementById(idContainer);
+        if (data.length === 0) {
+            const h1 = document.createElement('h1');
+            h1.textContent = "PRÓXIMAMENTE";
+            linksContainer.appendChild(h1);
+        } else {
+            data.forEach(link => {
+                const anchor = document.createElement('a');
+                anchor.href = link.url;
+                anchor.textContent = link.number;
+                linksContainer.appendChild(anchor);
+            });
+        }
+    } catch (error) {
+        console.error('Error:', error);
+    }
+};
