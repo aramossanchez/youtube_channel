@@ -1,34 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: rgb(48, 0, 49);
 }
+
 .container {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
+
 .title_app {
     display: none;
 }
+
 .close_lista_videos {
     display: none;
 }
+
 .h1_container {
-    width: 90vw;
+    width: 290px;
     border-radius: 10px;
-    height: 100px;
+    height: 290px;
     background-size: cover;
+    display: flex;
+    flex-direction: row;
 }
-h1{
+
+h1 {
     text-align: center;
-    width: 90vw;
+    width: 300px;
     padding: 1em 0;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
@@ -37,37 +47,34 @@ h1{
     text-shadow: 1px 1px 8px white;
     border-radius: 0.25em;
 }
-.contenedor_videos{
+
+.contenedor_videos {
     margin-top: 1em;
-    width: 95vw;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: start;
     flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
 }
+
 .portada-lista-videos {
     display: none;
 }
-/* .lista_videos{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    transition: 0.3s;
-    margin: 1em 0;
-} */
-.cerrada{
+
+.cerrada {
     max-height: 0;
     transform: scaleY(0);
 }
-.abierta{
+
+.abierta {
     max-height: 1000em;
     transform: scaleY(1);
 }
-a{
+
+a {
     all: unset;
     text-align: center;
     font-size: 1.2em;
@@ -82,66 +89,202 @@ a{
     transition: 0.4s;
     cursor: pointer;
 }
-a:hover{
+
+a:hover {
     background-color: rgb(80, 255, 232);
     color: black;
 }
+
 /*IMAGENES DE FONDO DE LOS H1*/
-#zelda-wind-waker-h1, #zelda-wind-waker-portada{
+#zelda-wind-waker-h1,
+#zelda-wind-waker-portada {
     background-image: url("./img/miniatura-zelda-wind-waker.png");
 }
-#dark-souls-h1, #dark-souls-portada{
+
+#dark-souls-h1,
+#dark-souls-portada {
     background-image: url("./img/miniatura-dark-souls.jpg");
 }
-#league-of-legends-h1, #league-of-legends-portada{
+
+#league-of-legends-h1,
+#league-of-legends-portada {
     background-image: url("./img/miniatura-league-of-legends.jpg");
 }
-#skyrim-h1, #skyrim-portada{
+
+#skyrim-h1,
+#skyrim-portada {
     background-image: url("./img/miniatura-skyrim.jpg");
 }
-#albacete-h1, #albacete-portada{
+
+#albacete-h1,
+#albacete-portada {
     background-image: url("./img/miniatura-albacete.png");
 }
-#darksouls2-h1, #darksouls2-portada{
+
+#darksouls2-h1,
+#darksouls2-portada {
     background-image: url("./img/miniatura-darksouls2.jpg");
 }
-#super-mario-galaxy-h1, #super-mario-galaxy-portada{
+
+#super-mario-galaxy-h1,
+#super-mario-galaxy-portada {
     background-image: url("./img/miniatura-super-mario-galaxy.png");
 }
-#rayman-legends-h1, #rayman-legends-portada{
+
+#rayman-legends-h1,
+#rayman-legends-portada {
     background-image: url("./img/miniatura-rayman-legends.png");
 }
-#super-mario-sunshine-h1, #super-mario-sunshine-portada{
+
+#super-mario-sunshine-h1,
+#super-mario-sunshine-portada {
     background-image: url("./img/miniatura-super-mario-sunshine.png");
 }
-#slime-rancher-h1, #slime-rancher-portada{
+
+#slime-rancher-h1,
+#slime-rancher-portada {
     background-image: url("./img/miniatura-slime-rancher.png");
 }
-#pikmin-3-deluxe-h1, #pikmin-3-deluxe-portada{
+
+#pikmin-3-deluxe-h1,
+#pikmin-3-deluxe-portada {
     background-image: url("./img/miniatura-pikmin-3-deluxe.png");
 }
-#brawl-stars-h1, #brawl-stars-portada{
+
+#brawl-stars-h1,
+#brawl-stars-portada {
     background-image: url("./img/miniatura-brawl-stars.png");
 }
-#pokemon-reminiscencia-h1, #pokemon-reminiscencia-portada{
+
+#pokemon-reminiscencia-h1,
+#pokemon-reminiscencia-portada {
     background-image: url("./img/miniatura-pokemon-reminiscencia.png");
 }
-#tinykin-h1, #tinykin-portada{
+
+#tinykin-h1,
+#tinykin-portada {
     background-image: url("./img/miniatura-tinykin.jpg");
 }
-#palworld-h1, #palworld-portada{
+
+#palworld-h1,
+#palworld-portada {
     background-image: url("./img/miniatura-palworld.jpg");
+}
+
+@media (min-width: 801px) {
+    .container {
+        gap: 10px;
+    }
+    .contenedor_videos {
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        gap: 5px;
+    }
+
+    .h1_container {
+        margin-top: 5px;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+    .h1_container:hover {
+        filter: brightness(0.5);
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+        margin-top: 300px;
+        color: rgb(131, 131, 255);
+        font-size: 25px;
+        text-shadow: 1px 1px 8px rgb(169, 252, 241);
+    }
+
+    .lista_videos {
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        transition: 0.3s;
+        height: 200px;
+    }
+
+    .links-container {
+        border: 4px solid rgb(255, 255, 255);
+        border-top: 0px;
+        box-sizing: border-box;
+        background-color: rgb(37, 37, 37);
+        width: 300px;
+        height: 200px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        padding: 10px;
+        gap: 10px;
+        overflow-y: auto;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .links-container h1 {
+        margin-top: 0;
+        color: white;
+    }
+
+    .links-container::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    .links-container::-webkit-scrollbar-track {
+        background: rgb(27, 27, 27);
+    }
+
+    /* Handle */
+    .links-container::-webkit-scrollbar-thumb {
+        background: rgb(148, 148, 148);
+    }
+
+    /* Handle on hover */
+    .links-container::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    a {
+        all: unset;
+        width: 30px;
+        height: 25px;
+        text-align: center;
+        padding-top: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: white;
+        border: 0.2em solid rgb(255, 54, 238);
+        background-color: rgb(0, 0, 0);
+        border-radius: 100px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 800px) {
     body {
         background-color: rgb(56, 56, 56);
     }
+
     .title_app {
         display: block;
         width: 100vw;
         text-align: center;
-        background: linear-gradient(to right, rgb(255, 54, 238) , rgb(80, 255, 232));
+        background: linear-gradient(to right, rgb(255, 54, 238), rgb(80, 255, 232));
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         text-shadow: none;
@@ -152,6 +295,7 @@ a:hover{
         border-radius: 0;
         position: relative;
     }
+
     .container {
         width: 100vw;
         height: 100%;
@@ -163,7 +307,8 @@ a:hover{
         align-content: space-evenly;
         align-items: center;
     }
-    .contenedor_videos{
+
+    .contenedor_videos {
         margin-bottom: 60px;
         width: 33.33vw;
         border-radius: 0;
@@ -175,6 +320,7 @@ a:hover{
         outline: 0;
         margin: 0;
     }
+
     .h1_container {
         position: relative;
         width: 100%;
@@ -190,16 +336,18 @@ a:hover{
         box-sizing: border-box;
         border: 2px solid black;
     }
+
     .h1_container h1 {
         color: rgb(0, 0, 0);
         text-shadow: 1px 1px 8px rgb(255, 174, 0);
         font-size: 14px;
         width: auto;
-        background: rgb(32,255,236);
-        background: linear-gradient(90deg, rgba(32,255,236,1) 0%, rgba(255,96,247,1) 100%, rgba(252,252,252,1) 100%);
+        background: rgb(32, 255, 236);
+        background: linear-gradient(90deg, rgba(32, 255, 236, 1) 0%, rgba(255, 96, 247, 1) 100%, rgba(252, 252, 252, 1) 100%);
         padding: 5px 10px;
     }
-    .lista_videos{
+
+    .lista_videos {
         position: fixed;
         top: 0;
         left: 0;
@@ -216,6 +364,7 @@ a:hover{
         z-index: 10;
         box-sizing: border-box;
     }
+
     .portada-lista-videos {
         display: flex;
         flex-direction: column;
@@ -227,11 +376,13 @@ a:hover{
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .portada-lista-videos h1 {
         width: 100%;
         background-color: rgba(0, 0, 0, 0.671);
         border-radius: 0;
     }
+
     .close_lista_videos {
         display: flex;
         flex-direction: row;
@@ -244,19 +395,23 @@ a:hover{
         box-sizing: border-box;
         border-radius: 20px;
     }
-    .portada-lista-videos .close_lista_videos{
+
+    .portada-lista-videos .close_lista_videos {
         background-color: rgba(0, 0, 0, 0.671);
     }
+
     .close_lista_videos>img {
         width: 25px;
         height: 20px;
     }
-    .close_lista_videos h1{
+
+    .close_lista_videos h1 {
         width: auto;
         font-size: 16px;
         background-color: transparent;
     }
-    a{
+
+    a {
         all: unset;
         margin: 10px;
         text-align: center;
@@ -271,7 +426,8 @@ a:hover{
         padding: 5px 10px;
         cursor: pointer;
     }
-    .links-container{
+
+    .links-container {
         width: 100%;
         height: auto;
         display: flex;
@@ -284,8 +440,8 @@ a:hover{
         overflow-y: auto;
         box-sizing: border-box;
     }
-    
-    .links-container a{
+
+    .links-container a {
         all: unset;
         height: 50px;
         width: 50px;
@@ -304,23 +460,25 @@ a:hover{
         justify-content: center;
         align-items: center;
     }
-    .cerrada{
+
+    .cerrada {
         left: -1000em;
         transform: none;
     }
-    .abierta{
+
+    .abierta {
         left: 0;
         transform: none;
     }
 }
 
 @media (max-width: 480px) {
-    
+
     .container {
         grid-template-columns: 1fr 1fr;
     }
-    
-    .contenedor_videos{
+
+    .contenedor_videos {
         width: 50vw;
     }
 }
