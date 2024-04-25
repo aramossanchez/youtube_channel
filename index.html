@@ -14,6 +14,70 @@
     <div class="container">
 
 
+        <!-- VIDEOS DE BIOSHOCK INFINITE -->
+        <div class="contenedor_videos" id="bioshock-contenedor">
+            <div id="bioshock-h1" onclick="abrirListaVideos('bioshock-lista')" class="h1_container">
+                <h1>Bioshock Infinite</h1>
+            </div>
+            <div id="bioshock-lista" class="lista_videos cerrada">
+                <div id="bioshock-portada" class="portada-lista-videos">
+                    <div class="close_lista_videos" onclick="abrirListaVideos('bioshock-lista')">
+                        <img src="/img/arrow.png" alt="Botón cerrar">
+                        <h1>Volver</h1>
+                    </div>
+                    <h1>Bioshock Infinite</h1>
+                </div>
+                <div id="links-container-bioshock" class="links-container"></div>
+            </div>
+        </div>
+        <!-- VIDEOS DE DITTO -->
+        <div class="contenedor_videos" id="ditto-contenedor">
+            <div id="ditto-h1" onclick="abrirListaVideos('ditto-lista')" class="h1_container">
+                <h1>The Swords of Ditto: Mormo's Curse</h1>
+            </div>
+            <div id="ditto-lista" class="lista_videos cerrada">
+                <div id="ditto-portada" class="portada-lista-videos">
+                    <div class="close_lista_videos" onclick="abrirListaVideos('ditto-lista')">
+                        <img src="/img/arrow.png" alt="Botón cerrar">
+                        <h1>Volver</h1>
+                    </div>
+                    <h1>The Swords of Ditto: Mormo's Curse</h1>
+                </div>
+                <div id="links-container-ditto" class="links-container"></div>
+            </div>
+        </div>
+        <!-- VIDEOS DE GRIS -->
+        <div class="contenedor_videos" id="gris-contenedor">
+            <div id="gris-h1" onclick="abrirListaVideos('gris-lista')" class="h1_container">
+                <h1>Gris</h1>
+            </div>
+            <div id="gris-lista" class="lista_videos cerrada">
+                <div id="gris-portada" class="portada-lista-videos">
+                    <div class="close_lista_videos" onclick="abrirListaVideos('gris-lista')">
+                        <img src="/img/arrow.png" alt="Botón cerrar">
+                        <h1>Volver</h1>
+                    </div>
+                    <h1>Gris</h1>
+                </div>
+                <div id="links-container-gris" class="links-container"></div>
+            </div>
+        </div>
+        <!-- VIDEOS DE DARKWOOD -->
+        <div class="contenedor_videos" id="darkwood-contenedor">
+            <div id="darkwood-h1" onclick="abrirListaVideos('darkwood-lista')" class="h1_container">
+                <h1>Darkwood</h1>
+            </div>
+            <div id="darkwood-lista" class="lista_videos cerrada">
+                <div id="darkwood-portada" class="portada-lista-videos">
+                    <div class="close_lista_videos" onclick="abrirListaVideos('darkwood-lista')">
+                        <img src="/img/arrow.png" alt="Botón cerrar">
+                        <h1>Volver</h1>
+                    </div>
+                    <h1>Darkwood</h1>
+                </div>
+                <div id="links-container-darkwood" class="links-container"></div>
+            </div>
+        </div>
         <!-- VIDEOS DE TINYKIN -->
         <div class="contenedor_videos" id="tinykin-contenedor">
             <div id="tinykin-h1" onclick="abrirListaVideos('tinykin-lista')" class="h1_container">
@@ -45,22 +109,6 @@
                 </div>
                 <div id="links-container-pokemon-reminiscencia" class="links-container">
                 </div>
-            </div>
-        </div>
-        <!-- VIDEOS DE SKYRIM -->
-        <div class="contenedor_videos" id="skyrim-contenedor">
-            <div id="skyrim-h1" onclick="abrirListaVideos('skyrim-lista')" class="h1_container">
-                <h1>Skyrim</h1>
-            </div>
-            <div id="skyrim-lista" class="lista_videos cerrada">
-                <div id="skyrim-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('skyrim-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Skyrim</h1>
-                </div>
-                <div id="links-container-skyrim" class="links-container"></div>
             </div>
         </div>
         <!-- VIDEOS DE ALBACETE WARRIOR -->
@@ -422,10 +470,12 @@
 <script src="./script.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        cargarLinksDesdeJSON('../links/Palworld.json', 'links-container-palworld');
+        cargarLinksDesdeJSON('../links/BioshockInfinite.json', 'links-container-bioshock');
+        cargarLinksDesdeJSON('../links/Ditto.json', 'links-container-ditto');
+        cargarLinksDesdeJSON('../links/Gris.json', 'links-container-gris');
+        cargarLinksDesdeJSON('../links/Darkwood.json', 'links-container-darkwood');
         cargarLinksDesdeJSON('../links/Tinykin.json', 'links-container-tinykin');
         cargarLinksDesdeJSON('../links/PokemonReminiscencia.json', 'links-container-pokemon-reminiscencia');
-        cargarLinksDesdeJSON('../links/Skyrim.json', 'links-container-skyrim');
         cargarLinksDesdeJSON('../links/AlbaceteWarrior.json', 'links-container-albacete');
         cargarLinksDesdeJSON('../links/DarkSouls2.json', 'links-container-dark_souls_2');
         // FALTA EL RESTO DE JUEGOS

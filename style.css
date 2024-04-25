@@ -95,7 +95,7 @@ a:hover {
     color: black;
 }
 
-/*IMAGENES DE FONDO DE LOS H1*/
+/*IMÁGENES DE FONDO DE LOS H1*/
 #zelda-wind-waker-h1,
 #zelda-wind-waker-portada {
     background-image: url("./img/miniatura-zelda-wind-waker.png");
@@ -109,11 +109,6 @@ a:hover {
 #league-of-legends-h1,
 #league-of-legends-portada {
     background-image: url("./img/miniatura-league-of-legends.jpg");
-}
-
-#skyrim-h1,
-#skyrim-portada {
-    background-image: url("./img/miniatura-skyrim.jpg");
 }
 
 #albacete-h1,
@@ -166,9 +161,24 @@ a:hover {
     background-image: url("./img/miniatura-tinykin.jpg");
 }
 
-#palworld-h1,
-#palworld-portada {
-    background-image: url("./img/miniatura-palworld.jpg");
+#darkwood-h1,
+#darkwood-portada {
+    background-image: url("./img/miniatura-darkwood.jpg");
+}
+
+#gris-h1,
+#gris-portada {
+    background-image: url("./img/miniatura-gris.jpg");
+}
+
+#ditto-h1,
+#ditto-portada {
+    background-image: url("./img/miniatura-ditto.jpg");
+}
+
+#bioshock-h1,
+#bioshock-portada {
+    background-image: url("./img/miniatura-bioshock.jpg");
 }
 
 @media (min-width: 801px) {
