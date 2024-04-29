@@ -30,6 +30,22 @@
                 <div id="links-container-bioshock" class="links-container"></div>
             </div>
         </div>
+        <!-- VIDEOS DE SKYRIM -->
+        <div class="contenedor_videos" id="skyrim-contenedor">
+            <div id="skyrim-h1" onclick="abrirListaVideos('skyrim-lista')" class="h1_container">
+                <h1>Skyrim</h1>
+            </div>
+            <div id="skyrim-lista" class="lista_videos cerrada">
+                <div id="skyrim-portada" class="portada-lista-videos">
+                    <div class="close_lista_videos" onclick="abrirListaVideos('skyrim-lista')">
+                        <img src="/img/arrow.png" alt="Botón cerrar">
+                        <h1>Volver</h1>
+                    </div>
+                    <h1>Skyrim</h1>
+                </div>
+                <div id="links-container-skyrim" class="links-container"></div>
+            </div>
+        </div>
         <!-- VIDEOS DE DITTO -->
         <div class="contenedor_videos" id="ditto-contenedor">
             <div id="ditto-h1" onclick="abrirListaVideos('ditto-lista')" class="h1_container">
@@ -471,6 +487,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         cargarLinksDesdeJSON('../links/BioshockInfinite.json', 'links-container-bioshock');
+        cargarLinksDesdeJSON('../links/Skyrim.json', 'links-container-skyrim');
         cargarLinksDesdeJSON('../links/Ditto.json', 'links-container-ditto');
         cargarLinksDesdeJSON('../links/Gris.json', 'links-container-gris');
         cargarLinksDesdeJSON('../links/Darkwood.json', 'links-container-darkwood');

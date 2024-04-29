@@ -131,6 +131,11 @@ a:hover {
     background-image: url("./img/miniatura-rayman-legends.png");
 }
 
+#skyrim-h1,
+#skyrim-portada {
+    background-image: url("./img/miniatura-skyrim.jpg");
+}
+
 #super-mario-sunshine-h1,
 #super-mario-sunshine-portada {
     background-image: url("./img/miniatura-super-mario-sunshine.png");
