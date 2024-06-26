@@ -57,7 +57,9 @@ h1 {
     justify-content: start;
     flex-wrap: wrap;
     background-color: white;
-    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    animation: 2s infinite alternate border_guapo;
 }
 
 .portada-lista-videos {
@@ -497,3 +499,18 @@ a:hover {
         width: 50vw;
     }
 }
+
+
+
+@keyframes border_guapo {
+    0% {
+        border-image: linear-gradient(#cb81fc, #45e9ff) 30;
+    }
+    50% {
+        border-image: linear-gradient(#45e9ff, #cb81fc ) 30;
+    }
+  
+    100% {
+        border-image: linear-gradient(#cb81fc, #45e9ff) 30;
+    }
+  }
