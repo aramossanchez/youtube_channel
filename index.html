@@ -1,503 +1,674 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gameplays - Youtube de Armandohyeah</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <h1 class="title_app">Youtube de Armandohyeah</h1>
     <div class="container">
+      <!-- VIDEOS DE SPACE MARINE -->
+      <div class="contenedor_videos" id="spaceMarine-contenedor">
+        <div
+          id="spaceMarine-h1"
+          onclick="abrirListaVideos('spaceMarine-lista')"
+          class="h1_container"
+        >
+          <h1>Space Marine Infinite</h1>
+        </div>
+        <div id="spaceMarine-lista" class="lista_videos cerrada">
+          <div id="spaceMarine-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('spaceMarine-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Space Marine</h1>
+          </div>
+          <div id="links-container-spaceMarine" class="links-container"></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE BIOSHOCK INFINITE -->
+      <div class="contenedor_videos" id="bioshock-contenedor">
+        <div
+          id="bioshock-h1"
+          onclick="abrirListaVideos('bioshock-lista')"
+          class="h1_container"
+        >
+          <h1>Bioshock Infinite</h1>
+        </div>
+        <div id="bioshock-lista" class="lista_videos cerrada">
+          <div id="bioshock-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('bioshock-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Bioshock Infinite</h1>
+          </div>
+          <div id="links-container-bioshock" class="links-container"></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE SKYRIM -->
+      <div class="contenedor_videos" id="skyrim-contenedor">
+        <div
+          id="skyrim-h1"
+          onclick="abrirListaVideos('skyrim-lista')"
+          class="h1_container"
+        >
+          <h1>Skyrim</h1>
+        </div>
+        <div id="skyrim-lista" class="lista_videos cerrada">
+          <div id="skyrim-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('skyrim-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Skyrim</h1>
+          </div>
+          <div id="links-container-skyrim" class="links-container"></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE DITTO -->
+      <div class="contenedor_videos" id="ditto-contenedor">
+        <div
+          id="ditto-h1"
+          onclick="abrirListaVideos('ditto-lista')"
+          class="h1_container"
+        >
+          <h1>The Swords of Ditto: Mormo's Curse</h1>
+        </div>
+        <div id="ditto-lista" class="lista_videos cerrada">
+          <div id="ditto-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('ditto-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>The Swords of Ditto: Mormo's Curse</h1>
+          </div>
+          <div id="links-container-ditto" class="links-container"></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE GRIS -->
+      <div class="contenedor_videos" id="gris-contenedor">
+        <div
+          id="gris-h1"
+          onclick="abrirListaVideos('gris-lista')"
+          class="h1_container"
+        >
+          <h1>Gris</h1>
+        </div>
+        <div id="gris-lista" class="lista_videos cerrada">
+          <div id="gris-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('gris-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Gris</h1>
+          </div>
+          <div id="links-container-gris" class="links-container"></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE DARKWOOD -->
+      <div class="contenedor_videos" id="darkwood-contenedor">
+        <div
+          id="darkwood-h1"
+          onclick="abrirListaVideos('darkwood-lista')"
+          class="h1_container"
+        >
+          <h1>Darkwood</h1>
+        </div>
+        <div id="darkwood-lista" class="lista_videos cerrada">
+          <div id="darkwood-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('darkwood-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Darkwood</h1>
+          </div>
+          <div id="links-container-darkwood" class="links-container"></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE TINYKIN -->
+      <div class="contenedor_videos" id="tinykin-contenedor">
+        <div
+          id="tinykin-h1"
+          onclick="abrirListaVideos('tinykin-lista')"
+          class="h1_container"
+        >
+          <h1>Tinykin</h1>
+        </div>
+        <div id="tinykin-lista" class="lista_videos cerrada">
+          <div id="tinykin-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('tinykin-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Tinykin</h1>
+          </div>
+          <div id="links-container-tinykin" class="links-container"></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE POKEMON HOJA VERDE -->
+      <div class="contenedor_videos" id="pokemon-hoja-verde-contenedor">
+        <div
+          id="pokemon-hoja-verde-h1"
+          onclick="abrirListaVideos('pokemon-hoja-verde-lista')"
+          class="h1_container"
+        >
+          <h1>Pokémon Hoja Verde</h1>
+        </div>
+        <div id="pokemon-hoja-verde-lista" class="lista_videos cerrada">
+          <div id="pokemon-hoja-verde-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('pokemon-hoja-verde-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Pokémon Hoja Verde</h1>
+          </div>
+          <div
+            id="links-container-pokemon-hoja-verde"
+            class="links-container"
+          ></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE ALBACETE WARRIOR -->
+      <div class="contenedor_videos" id="albacete-contenedor">
+        <div
+          id="albacete-h1"
+          onclick="abrirListaVideos('albacete-lista')"
+          class="h1_container"
+        >
+          <h1>Albacete Warrior</h1>
+        </div>
+        <div id="albacete-lista" class="lista_videos cerrada">
+          <div id="albacete-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('albacete-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Albacete Warrior</h1>
+          </div>
+          <div id="links-container-albacete" class="links-container"></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE DARK SOULS 2 -->
+      <div class="contenedor_videos" id="darksouls2-contenedor">
+        <div
+          id="darksouls2-h1"
+          onclick="abrirListaVideos('darksouls2-lista')"
+          class="h1_container"
+        >
+          <h1>Dark Souls 2</h1>
+        </div>
+        <div id="darksouls2-lista" class="lista_videos cerrada">
+          <div id="darksouls2-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('darksouls2-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Dark Souls 2</h1>
+          </div>
+          <div id="links-container-dark_souls_2" class="links-container"></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE DARK SOULS -->
+      <div class="contenedor_videos" id="dark-souls-contenedor">
+        <div
+          id="dark-souls-h1"
+          onclick="abrirListaVideos('dark-souls-lista')"
+          class="h1_container"
+        >
+          <h1>Dark Souls</h1>
+        </div>
+        <div id="dark-souls-lista" class="lista_videos cerrada">
+          <div id="dark-souls-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('dark-souls-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Dark Souls</h1>
+          </div>
+          <div class="links-container">
+            <a href="https://www.youtube.com/watch?v=YszpEpn-Q88">1</a>
+            <a href="https://www.youtube.com/watch?v=r_LSzL1k9Rc">2</a>
+            <a href="https://www.youtube.com/watch?v=xfJHQTeh8xo">3</a>
+            <a href="https://www.youtube.com/watch?v=PJBkeMeiZL0">4</a>
+            <a href="https://www.youtube.com/watch?v=kZl0Eb6aDYY">5</a>
+            <a href="https://www.youtube.com/watch?v=ISZR_wyfYbc">6</a>
+            <a href="https://www.youtube.com/watch?v=LCGQfDog0wY">7</a>
+            <a href="https://www.youtube.com/watch?v=fojsKETSk5w">8</a>
+            <a href="https://www.youtube.com/watch?v=I1xNlpXF7-8">9</a>
+            <a href="https://www.youtube.com/watch?v=qi4EDt8xkWQ">10</a>
+            <a href="https://www.youtube.com/watch?v=9faOqMWNwPA">11</a>
+            <a href="https://www.youtube.com/watch?v=99aL4RiGVjU">12</a>
+            <a href="https://www.youtube.com/watch?v=Lp_UZNDJTVw">13</a>
+            <a href="https://www.youtube.com/watch?v=4ArzQybEVEY">14</a>
+            <a href="https://www.youtube.com/watch?v=Zt1zc-KS9Jg">15</a>
+            <a href="https://www.youtube.com/watch?v=mKIY2_CQjJ4">16</a>
+            <a href="https://www.youtube.com/watch?v=IwLSZ8CQV0A">17</a>
+            <a href="https://www.youtube.com/watch?v=QNzeYd762fc">18</a>
+            <a href="https://www.youtube.com/watch?v=vFVhPnO3k8k">19</a>
+            <a href="https://www.youtube.com/watch?v=_fqJUqDF3uQ">20</a>
+            <a href="https://www.youtube.com/watch?v=abIND8_yOLY">21</a>
+            <a href="https://www.youtube.com/watch?v=0vOYFFG-1VI">22</a>
+            <a href="https://www.youtube.com/watch?v=b3B1bMkq8Wk">23</a>
+            <a href="https://www.youtube.com/watch?v=Lei3JF8fjaM">24</a>
+            <a href="https://www.youtube.com/watch?v=iOvpEst7IaM">25</a>
+            <a href="https://www.youtube.com/watch?v=be-1-vSLggU">26</a>
+            <a href="https://www.youtube.com/watch?v=cSkm246CRRg">27</a>
+            <a href="https://www.youtube.com/watch?v=z8jrdb-htps">28</a>
+            <a href="https://www.youtube.com/watch?v=33Bsc3dY7Xs">29</a>
+            <a href="https://www.youtube.com/watch?v=C9Kd3vm8JDw">30</a>
+            <a href="https://www.youtube.com/watch?v=mQxAen1_zdg">31</a>
+            <a href="https://www.youtube.com/watch?v=RKcz_KoObTk">32</a>
+            <a href="https://www.youtube.com/watch?v=9844GPQlHfo">33</a>
+            <a href="https://www.youtube.com/watch?v=ZUnvw0PUGb4">34</a>
+            <a href="https://www.youtube.com/watch?v=It_Pdg6JQkw">35</a>
+            <a href="https://www.youtube.com/watch?v=5lYHOgzgVo4">36</a>
+          </div>
+        </div>
+      </div>
+      <!-- VIDEOS DE LEAGUE OF LEGENDS -->
+      <div class="contenedor_videos" id="league-of-legends-contenedor">
+        <div
+          id="league-of-legends-h1"
+          onclick="abrirListaVideos('league-of-legends-lista')"
+          class="h1_container"
+        >
+          <h1>League of Legends</h1>
+        </div>
+        <div id="league-of-legends-lista" class="lista_videos cerrada">
+          <div id="league-of-legends-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('league-of-legends-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>League of Legends</h1>
+          </div>
+          <div
+            id="links-container-league-of-legends"
+            class="links-container"
+          ></div>
+        </div>
+      </div>
+      <!-- VIDEOS DE SUPER MARIO GALAXY -->
+      <div class="contenedor_videos" id="super-mario-galaxy">
+        <div
+          id="super-mario-galaxy-h1"
+          onclick="abrirListaVideos('super-mario-galaxy-lista')"
+          class="h1_container"
+        >
+          <h1>Super Mario Galaxy</h1>
+        </div>
+        <div id="super-mario-galaxy-lista" class="lista_videos cerrada">
+          <div id="super-mario-galaxy-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('super-mario-galaxy-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Super Mario Galaxy</h1>
+          </div>
+          <div class="links-container">
+            <a href="https://www.youtube.com/watch?v=AxIbnantXC0">1</a>
+            <a href="https://www.youtube.com/watch?v=kWN1Us6bHes">2</a>
+            <a href="https://www.youtube.com/watch?v=LC8_-1ns1vQ">3</a>
+            <a href="https://www.youtube.com/watch?v=jPmFMjUPpN0">4</a>
+            <a href="https://www.youtube.com/watch?v=ChD19Y2-4uw">5</a>
+            <a href="https://www.youtube.com/watch?v=lfaOXcJEk1M">6</a>
+            <a href="https://www.youtube.com/watch?v=vcHRFy5qOXw">7</a>
+            <a href="https://www.youtube.com/watch?v=m4kze1gGkXc">8</a>
+            <a href="https://www.youtube.com/watch?v=JZkIzMzJDTg">9</a>
+            <a href="https://www.youtube.com/watch?v=afaeXALlC4Y">10</a>
+            <a href="https://www.youtube.com/watch?v=MJqF1RmSYC0">11</a>
+            <a href="https://www.youtube.com/watch?v=X2OnhcY2AeI">12</a>
+            <a href="https://www.youtube.com/watch?v=-JkuAacKiQQ">13</a>
+            <a href="https://www.youtube.com/watch?v=TIZ-MgTA78w">14</a>
+            <a href="https://www.youtube.com/watch?v=6gX-WE0vURw">15</a>
+          </div>
+        </div>
+      </div>
 
+      <!-- VIDEOS DE BRAWLSTARS -->
+      <div class="contenedor_videos" id="brawl-stars">
+        <div
+          id="brawl-stars-h1"
+          onclick="abrirListaVideos('brawl-stars-lista')"
+          class="h1_container"
+        >
+          <h1>Brawl Stars</h1>
+        </div>
+        <div id="brawl-stars-lista" class="lista_videos cerrada">
+          <div id="brawl-stars-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('brawl-stars-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Brawl Stars</h1>
+          </div>
+          <div class="links-container">
+            <a href="https://www.youtube.com/watch?v=QJXxOTx5Ovc">1</a>
+            <a href="https://www.youtube.com/watch?v=yebhUD4yQrk">2</a>
+          </div>
+        </div>
+      </div>
 
-        <!-- VIDEOS DE BIOSHOCK INFINITE -->
-        <div class="contenedor_videos" id="bioshock-contenedor">
-            <div id="bioshock-h1" onclick="abrirListaVideos('bioshock-lista')" class="h1_container">
-                <h1>Bioshock Infinite</h1>
-            </div>
-            <div id="bioshock-lista" class="lista_videos cerrada">
-                <div id="bioshock-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('bioshock-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Bioshock Infinite</h1>
-                </div>
-                <div id="links-container-bioshock" class="links-container"></div>
-            </div>
+      <!-- VIDEOS DE ZELDA -->
+      <div class="contenedor_videos" id="zelda-wind-waker-contenedor">
+        <div
+          id="zelda-wind-waker-h1"
+          onclick="abrirListaVideos('zelda-wind-waker-lista')"
+          class="h1_container"
+        >
+          <h1>The Legend of Zelda - Wind Waker</h1>
         </div>
-        <!-- VIDEOS DE SKYRIM -->
-        <div class="contenedor_videos" id="skyrim-contenedor">
-            <div id="skyrim-h1" onclick="abrirListaVideos('skyrim-lista')" class="h1_container">
-                <h1>Skyrim</h1>
+        <div id="zelda-wind-waker-lista" class="lista_videos cerrada">
+          <div id="zelda-wind-waker-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('zelda-wind-waker-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
             </div>
-            <div id="skyrim-lista" class="lista_videos cerrada">
-                <div id="skyrim-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('skyrim-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Skyrim</h1>
-                </div>
-                <div id="links-container-skyrim" class="links-container"></div>
-            </div>
+            <h1>The Legend of Zelda - Wind Waker</h1>
+          </div>
+          <div class="links-container">
+            <a href="https://www.youtube.com/watch?v=DzXpnx8b7GM">1</a>
+            <a href="https://www.youtube.com/watch?v=SEvImQ52ELo">2</a>
+            <a href="https://www.youtube.com/watch?v=8j3o1cd-YHc">3</a>
+            <a href="https://www.youtube.com/watch?v=2JHLzGo4FAE">4</a>
+            <a href="https://www.youtube.com/watch?v=BVTpj56B_Oc">5</a>
+            <a href="https://www.youtube.com/watch?v=aRzKVwKmDEg">6</a>
+            <a href="https://www.youtube.com/watch?v=m011xfFcTMc">7</a>
+            <a href="https://www.youtube.com/watch?v=OBXvtWSsDB0">8</a>
+            <a href="https://www.youtube.com/watch?v=ts3OMgAof0I">9</a>
+            <a href="https://www.youtube.com/watch?v=992G8hn47Fs">10</a>
+            <a href="https://www.youtube.com/watch?v=5CXnDJFXBxs">11</a>
+            <a href="https://www.youtube.com/watch?v=zBHq36Eke3g">12</a>
+            <a href="https://www.youtube.com/watch?v=KrxlAP0eBH4">13</a>
+            <a href="https://www.youtube.com/watch?v=bjx5xZQr3_g">14</a>
+            <a href="https://www.youtube.com/watch?v=0WERNHbyanE">15</a>
+            <a href="https://www.youtube.com/watch?v=jHqlCXPPoN0">16</a>
+            <a href="https://www.youtube.com/watch?v=8a6UMs8zjxo">17</a>
+            <a href="https://www.youtube.com/watch?v=X6Q8hFqBS_U">18</a>
+          </div>
         </div>
-        <!-- VIDEOS DE DITTO -->
-        <div class="contenedor_videos" id="ditto-contenedor">
-            <div id="ditto-h1" onclick="abrirListaVideos('ditto-lista')" class="h1_container">
-                <h1>The Swords of Ditto: Mormo's Curse</h1>
-            </div>
-            <div id="ditto-lista" class="lista_videos cerrada">
-                <div id="ditto-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('ditto-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>The Swords of Ditto: Mormo's Curse</h1>
-                </div>
-                <div id="links-container-ditto" class="links-container"></div>
-            </div>
-        </div>
-        <!-- VIDEOS DE GRIS -->
-        <div class="contenedor_videos" id="gris-contenedor">
-            <div id="gris-h1" onclick="abrirListaVideos('gris-lista')" class="h1_container">
-                <h1>Gris</h1>
-            </div>
-            <div id="gris-lista" class="lista_videos cerrada">
-                <div id="gris-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('gris-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Gris</h1>
-                </div>
-                <div id="links-container-gris" class="links-container"></div>
-            </div>
-        </div>
-        <!-- VIDEOS DE DARKWOOD -->
-        <div class="contenedor_videos" id="darkwood-contenedor">
-            <div id="darkwood-h1" onclick="abrirListaVideos('darkwood-lista')" class="h1_container">
-                <h1>Darkwood</h1>
-            </div>
-            <div id="darkwood-lista" class="lista_videos cerrada">
-                <div id="darkwood-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('darkwood-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Darkwood</h1>
-                </div>
-                <div id="links-container-darkwood" class="links-container"></div>
-            </div>
-        </div>
-        <!-- VIDEOS DE TINYKIN -->
-        <div class="contenedor_videos" id="tinykin-contenedor">
-            <div id="tinykin-h1" onclick="abrirListaVideos('tinykin-lista')" class="h1_container">
-                <h1>Tinykin</h1>
-            </div>
-            <div id="tinykin-lista" class="lista_videos cerrada">
-                <div id="tinykin-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('tinykin-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Tinykin</h1>
-                </div>
-                <div id="links-container-tinykin" class="links-container"></div>
-            </div>
-        </div>
-        <!-- VIDEOS DE POKEMON HOJA VERDE -->
-        <div class="contenedor_videos" id="pokemon-hoja-verde-contenedor">
-            <div id="pokemon-hoja-verde-h1" onclick="abrirListaVideos('pokemon-hoja-verde-lista')" class="h1_container">
-                <h1>Pokémon Hoja Verde</h1>
-            </div>
-            <div id="pokemon-hoja-verde-lista" class="lista_videos cerrada">
-                <div id="pokemon-hoja-verde-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('pokemon-hoja-verde-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Pokémon Hoja Verde</h1>
-                </div>
-                <div id="links-container-pokemon-hoja-verde" class="links-container">
-                </div>
-            </div>
-        </div>
-        <!-- VIDEOS DE ALBACETE WARRIOR -->
-        <div class="contenedor_videos" id="albacete-contenedor">
-            <div id="albacete-h1" onclick="abrirListaVideos('albacete-lista')" class="h1_container">
-                <h1>Albacete Warrior</h1>
-            </div>
-            <div id="albacete-lista" class="lista_videos cerrada">
-                <div id="albacete-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('albacete-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Albacete Warrior</h1>
-                </div>
-                <div id="links-container-albacete" class="links-container"></div>
-            </div>
-        </div>
-        <!-- VIDEOS DE DARK SOULS 2 -->
-        <div class="contenedor_videos" id="darksouls2-contenedor">
-            <div id="darksouls2-h1" onclick="abrirListaVideos('darksouls2-lista')" class="h1_container">
-                <h1>Dark Souls 2</h1>
-            </div>
-            <div id="darksouls2-lista" class="lista_videos cerrada">
-                <div id="darksouls2-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('darksouls2-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Dark Souls 2</h1>
-                </div>
-                <div id="links-container-dark_souls_2" class="links-container"></div>
-            </div>
-        </div>
-        <!-- VIDEOS DE DARK SOULS -->
-        <div class="contenedor_videos" id="dark-souls-contenedor">
-            <div id="dark-souls-h1" onclick="abrirListaVideos('dark-souls-lista')" class="h1_container">
-                <h1>Dark Souls</h1>
-            </div>
-            <div id="dark-souls-lista" class="lista_videos cerrada">
-                <div id="dark-souls-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('dark-souls-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Dark Souls</h1>
-                </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=YszpEpn-Q88">1</a>
-                    <a href="https://www.youtube.com/watch?v=r_LSzL1k9Rc">2</a>
-                    <a href="https://www.youtube.com/watch?v=xfJHQTeh8xo">3</a>
-                    <a href="https://www.youtube.com/watch?v=PJBkeMeiZL0">4</a>
-                    <a href="https://www.youtube.com/watch?v=kZl0Eb6aDYY">5</a>
-                    <a href="https://www.youtube.com/watch?v=ISZR_wyfYbc">6</a>
-                    <a href="https://www.youtube.com/watch?v=LCGQfDog0wY">7</a>
-                    <a href="https://www.youtube.com/watch?v=fojsKETSk5w">8</a>
-                    <a href="https://www.youtube.com/watch?v=I1xNlpXF7-8">9</a>
-                    <a href="https://www.youtube.com/watch?v=qi4EDt8xkWQ">10</a>
-                    <a href="https://www.youtube.com/watch?v=9faOqMWNwPA">11</a>
-                    <a href="https://www.youtube.com/watch?v=99aL4RiGVjU">12</a>
-                    <a href="https://www.youtube.com/watch?v=Lp_UZNDJTVw">13</a>
-                    <a href="https://www.youtube.com/watch?v=4ArzQybEVEY">14</a>
-                    <a href="https://www.youtube.com/watch?v=Zt1zc-KS9Jg">15</a>
-                    <a href="https://www.youtube.com/watch?v=mKIY2_CQjJ4">16</a>
-                    <a href="https://www.youtube.com/watch?v=IwLSZ8CQV0A">17</a>
-                    <a href="https://www.youtube.com/watch?v=QNzeYd762fc">18</a>
-                    <a href="https://www.youtube.com/watch?v=vFVhPnO3k8k">19</a>
-                    <a href="https://www.youtube.com/watch?v=_fqJUqDF3uQ">20</a>
-                    <a href="https://www.youtube.com/watch?v=abIND8_yOLY">21</a>
-                    <a href="https://www.youtube.com/watch?v=0vOYFFG-1VI">22</a>
-                    <a href="https://www.youtube.com/watch?v=b3B1bMkq8Wk">23</a>
-                    <a href="https://www.youtube.com/watch?v=Lei3JF8fjaM">24</a>
-                    <a href="https://www.youtube.com/watch?v=iOvpEst7IaM">25</a>
-                    <a href="https://www.youtube.com/watch?v=be-1-vSLggU">26</a>
-                    <a href="https://www.youtube.com/watch?v=cSkm246CRRg">27</a>
-                    <a href="https://www.youtube.com/watch?v=z8jrdb-htps">28</a>
-                    <a href="https://www.youtube.com/watch?v=33Bsc3dY7Xs">29</a>
-                    <a href="https://www.youtube.com/watch?v=C9Kd3vm8JDw">30</a>
-                    <a href="https://www.youtube.com/watch?v=mQxAen1_zdg">31</a>
-                    <a href="https://www.youtube.com/watch?v=RKcz_KoObTk">32</a>
-                    <a href="https://www.youtube.com/watch?v=9844GPQlHfo">33</a>
-                    <a href="https://www.youtube.com/watch?v=ZUnvw0PUGb4">34</a>
-                    <a href="https://www.youtube.com/watch?v=It_Pdg6JQkw">35</a>
-                    <a href="https://www.youtube.com/watch?v=5lYHOgzgVo4">36</a>
-                </div>
-            </div>
-        </div>
-        <!-- VIDEOS DE LEAGUE OF LEGENDS -->
-        <div class="contenedor_videos" id="league-of-legends-contenedor">
-            <div id="league-of-legends-h1" onclick="abrirListaVideos('league-of-legends-lista')" class="h1_container">
-                <h1>League of Legends</h1>
-            </div>
-            <div id="league-of-legends-lista" class="lista_videos cerrada">
-                <div id="league-of-legends-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('league-of-legends-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>League of Legends</h1>
-                </div>
-                <div id="links-container-league-of-legends" class="links-container ">
-                </div>
-            </div>
-        </div>
-        <!-- VIDEOS DE SUPER MARIO GALAXY -->
-        <div class="contenedor_videos" id="super-mario-galaxy">
-            <div id="super-mario-galaxy-h1" onclick="abrirListaVideos('super-mario-galaxy-lista')" class="h1_container">
-                <h1>Super Mario Galaxy</h1>
-            </div>
-            <div id="super-mario-galaxy-lista" class="lista_videos cerrada">
-                <div id="super-mario-galaxy-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('super-mario-galaxy-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Super Mario Galaxy</h1>
-                </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=AxIbnantXC0">1</a>
-                    <a href="https://www.youtube.com/watch?v=kWN1Us6bHes">2</a>
-                    <a href="https://www.youtube.com/watch?v=LC8_-1ns1vQ">3</a>
-                    <a href="https://www.youtube.com/watch?v=jPmFMjUPpN0">4</a>
-                    <a href="https://www.youtube.com/watch?v=ChD19Y2-4uw">5</a>
-                    <a href="https://www.youtube.com/watch?v=lfaOXcJEk1M">6</a>
-                    <a href="https://www.youtube.com/watch?v=vcHRFy5qOXw">7</a>
-                    <a href="https://www.youtube.com/watch?v=m4kze1gGkXc">8</a>
-                    <a href="https://www.youtube.com/watch?v=JZkIzMzJDTg">9</a>
-                    <a href="https://www.youtube.com/watch?v=afaeXALlC4Y">10</a>
-                    <a href="https://www.youtube.com/watch?v=MJqF1RmSYC0">11</a>
-                    <a href="https://www.youtube.com/watch?v=X2OnhcY2AeI">12</a>
-                    <a href="https://www.youtube.com/watch?v=-JkuAacKiQQ">13</a>
-                    <a href="https://www.youtube.com/watch?v=TIZ-MgTA78w">14</a>
-                    <a href="https://www.youtube.com/watch?v=6gX-WE0vURw">15</a>
-                </div>
-            </div>
-        </div>
-        
-        <!-- VIDEOS DE BRAWLSTARS -->
-        <div class="contenedor_videos" id="brawl-stars">
-            <div id="brawl-stars-h1" onclick="abrirListaVideos('brawl-stars-lista')" class="h1_container">
-                <h1>Brawl Stars</h1>
-            </div>
-            <div id="brawl-stars-lista" class="lista_videos cerrada">
-                <div id="brawl-stars-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('brawl-stars-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Brawl Stars</h1>
-                </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=QJXxOTx5Ovc">1</a>
-                    <a href="https://www.youtube.com/watch?v=yebhUD4yQrk">2</a>
-                </div>
-            </div>
-        </div>
+      </div>
 
-        <!-- VIDEOS DE ZELDA -->
-        <div class="contenedor_videos" id="zelda-wind-waker-contenedor">
-            <div id="zelda-wind-waker-h1" onclick="abrirListaVideos('zelda-wind-waker-lista')" class="h1_container">
-                <h1>The Legend of Zelda - Wind Waker</h1>
-            </div>
-            <div id="zelda-wind-waker-lista" class="lista_videos cerrada">
-                <div id="zelda-wind-waker-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('zelda-wind-waker-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>The Legend of Zelda - Wind Waker</h1>
-                </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=DzXpnx8b7GM">1</a>
-                    <a href="https://www.youtube.com/watch?v=SEvImQ52ELo">2</a>
-                    <a href="https://www.youtube.com/watch?v=8j3o1cd-YHc">3</a>
-                    <a href="https://www.youtube.com/watch?v=2JHLzGo4FAE">4</a>
-                    <a href="https://www.youtube.com/watch?v=BVTpj56B_Oc">5</a>
-                    <a href="https://www.youtube.com/watch?v=aRzKVwKmDEg">6</a>
-                    <a href="https://www.youtube.com/watch?v=m011xfFcTMc">7</a>
-                    <a href="https://www.youtube.com/watch?v=OBXvtWSsDB0">8</a>
-                    <a href="https://www.youtube.com/watch?v=ts3OMgAof0I">9</a>
-                    <a href="https://www.youtube.com/watch?v=992G8hn47Fs">10</a>
-                    <a href="https://www.youtube.com/watch?v=5CXnDJFXBxs">11</a>
-                    <a href="https://www.youtube.com/watch?v=zBHq36Eke3g">12</a>
-                    <a href="https://www.youtube.com/watch?v=KrxlAP0eBH4">13</a>
-                    <a href="https://www.youtube.com/watch?v=bjx5xZQr3_g">14</a>
-                    <a href="https://www.youtube.com/watch?v=0WERNHbyanE">15</a>
-                    <a href="https://www.youtube.com/watch?v=jHqlCXPPoN0">16</a>
-                    <a href="https://www.youtube.com/watch?v=8a6UMs8zjxo">17</a>
-                    <a href="https://www.youtube.com/watch?v=X6Q8hFqBS_U">18</a>
-                </div>
-            </div>
+      <!-- VIDEOS DE PIKMIN 3 DELUXE -->
+      <div class="contenedor_videos" id="pikmin-3-deluxe">
+        <div
+          id="pikmin-3-deluxe-h1"
+          onclick="abrirListaVideos('pikmin-3-deluxe-lista')"
+          class="h1_container"
+        >
+          <h1>Pikmin 3 Deluxe</h1>
         </div>
+        <div id="pikmin-3-deluxe-lista" class="lista_videos cerrada">
+          <div id="pikmin-3-deluxe-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('pikmin-3-deluxe-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Pikmin 3 Deluxe</h1>
+          </div>
+          <div class="links-container">
+            <a href="https://www.youtube.com/watch?v=fsqOH1s9-Dk">1</a>
+            <a href="https://www.youtube.com/watch?v=7O33Vihzcek">2</a>
+          </div>
+        </div>
+      </div>
 
-        <!-- VIDEOS DE PIKMIN 3 DELUXE -->
-        <div class="contenedor_videos" id="pikmin-3-deluxe">
-            <div id="pikmin-3-deluxe-h1" onclick="abrirListaVideos('pikmin-3-deluxe-lista')" class="h1_container">
-                <h1>Pikmin 3 Deluxe</h1>
-            </div>
-            <div id="pikmin-3-deluxe-lista" class="lista_videos cerrada">
-                <div id="pikmin-3-deluxe-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('pikmin-3-deluxe-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Pikmin 3 Deluxe</h1>
-                </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=fsqOH1s9-Dk">1</a>
-                    <a href="https://www.youtube.com/watch?v=7O33Vihzcek">2</a>
-                </div>
-            </div>
+      <!-- VIDEOS DE RAYMAN -->
+      <div class="contenedor_videos" id="rayman-legends">
+        <div
+          id="rayman-legends-h1"
+          onclick="abrirListaVideos('rayman-legends-lista')"
+          class="h1_container"
+        >
+          <h1>Rayman Legends</h1>
         </div>
-        
-        <!-- VIDEOS DE RAYMAN -->
-        <div class="contenedor_videos" id="rayman-legends">
-            <div id="rayman-legends-h1" onclick="abrirListaVideos('rayman-legends-lista')" class="h1_container">
-                <h1>Rayman Legends</h1>
+        <div id="rayman-legends-lista" class="lista_videos cerrada">
+          <div id="rayman-legends-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('rayman-legends-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
             </div>
-            <div id="rayman-legends-lista" class="lista_videos cerrada">
-                <div id="rayman-legends-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('rayman-legends-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Rayman Legends</h1>
-                </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=llIKJlr7iWU">1</a>
-                    <a href="https://www.youtube.com/watch?v=_k1cqGIHH4I">2</a>
-                    <a href="https://www.youtube.com/watch?v=j8by5tKXn0M">3</a>
-                    <a href="https://www.youtube.com/watch?v=DIjGzROIcBc">4</a>
-                    <a href="https://www.youtube.com/watch?v=llBtesgmHGA">5</a>
-                    <a href="https://www.youtube.com/watch?v=9iJUS9ttsVM">6</a>
-                    <a href="https://www.youtube.com/watch?v=0wZRRUbXUAM">7</a>
-                    <a href="https://www.youtube.com/watch?v=qqsUqNKQQQE">8</a>
-                    <a href="https://www.youtube.com/watch?v=9eQGahw8qAs">9</a>
-                    <a href="https://www.youtube.com/watch?v=xWHU0raAVbg">10</a>
-                    <a href="https://www.youtube.com/watch?v=HOC-EZ5WewE">11</a>
-                    <a href="https://www.youtube.com/watch?v=A9pEmsy9kRM">12</a>
-                    <a href="https://www.youtube.com/watch?v=HbFeyUwsaBg">13</a>
-                    <a href="https://www.youtube.com/watch?v=7w5n_N2ZD5I">14</a>
-                    <a href="https://www.youtube.com/watch?v=IvPNpZmmtPw">15</a>
-                    <a href="https://www.youtube.com/watch?v=CLsx_NxWXyU">16</a>
-                    <a href="https://www.youtube.com/watch?v=2R70E-kjUvA">17</a>
-                    <a href="https://www.youtube.com/watch?v=iQDDaQYET0Y">18</a>
-                    <a href="https://www.youtube.com/watch?v=uXwF3JghjM8">19</a>
-                    <a href="https://www.youtube.com/watch?v=ec2Kbs6a6aM">20</a>
-                    <a href="https://www.youtube.com/watch?v=omDslvXtkNA">21</a>
-                    <a href="https://www.youtube.com/watch?v=Dg3KXrl81VQ">22</a>
-                    <a href="https://www.youtube.com/watch?v=8rowIfeivf0">23</a>
-                    <a href="https://www.youtube.com/watch?v=cHSEQlCiCAE">24</a>
-                    <a href="https://www.youtube.com/watch?v=XI5ZlhKg6Yw">25</a>
-                    <a href="https://www.youtube.com/watch?v=gJexutT9xgY">26</a>
-                    <a href="https://www.youtube.com/watch?v=GKWhXLUUUA0">27</a>
-                    <a href="https://www.youtube.com/watch?v=gGO542dVdc0">28</a>
-                    <a href="https://www.youtube.com/watch?v=AmDgTscTtXY">29</a>
-                    <a href="https://www.youtube.com/watch?v=GTFJ3m0GUk8">30</a>
-                    <a href="https://www.youtube.com/watch?v=3ODCcdl2ehE">31</a>
-                    <a href="https://www.youtube.com/watch?v=vMY8LhYAQfs">32</a>
-                    <a href="https://www.youtube.com/watch?v=pTBvGKvNqTU">33</a>
-                    <a href="https://www.youtube.com/watch?v=zWwggHHVt5s">34</a>
-                    <a href="https://www.youtube.com/watch?v=pCNCH5SDu4g">35</a>
-                    <a href="https://www.youtube.com/watch?v=mmikuvvm5GM">36</a>
-                    <a href="https://www.youtube.com/watch?v=C33iOO77xGU">37</a>
-                    <a href="https://www.youtube.com/watch?v=EAkZRBy010A">38</a>
-                    <a href="https://www.youtube.com/watch?v=ODYw41ypY2Y">39</a>
-                    <a href="https://www.youtube.com/watch?v=0U0K-ltGy8o">40</a>
-                    <a href="https://www.youtube.com/watch?v=wA5DX0f8d9A">41</a>
-                </div>
-            </div>
+            <h1>Rayman Legends</h1>
+          </div>
+          <div class="links-container">
+            <a href="https://www.youtube.com/watch?v=llIKJlr7iWU">1</a>
+            <a href="https://www.youtube.com/watch?v=_k1cqGIHH4I">2</a>
+            <a href="https://www.youtube.com/watch?v=j8by5tKXn0M">3</a>
+            <a href="https://www.youtube.com/watch?v=DIjGzROIcBc">4</a>
+            <a href="https://www.youtube.com/watch?v=llBtesgmHGA">5</a>
+            <a href="https://www.youtube.com/watch?v=9iJUS9ttsVM">6</a>
+            <a href="https://www.youtube.com/watch?v=0wZRRUbXUAM">7</a>
+            <a href="https://www.youtube.com/watch?v=qqsUqNKQQQE">8</a>
+            <a href="https://www.youtube.com/watch?v=9eQGahw8qAs">9</a>
+            <a href="https://www.youtube.com/watch?v=xWHU0raAVbg">10</a>
+            <a href="https://www.youtube.com/watch?v=HOC-EZ5WewE">11</a>
+            <a href="https://www.youtube.com/watch?v=A9pEmsy9kRM">12</a>
+            <a href="https://www.youtube.com/watch?v=HbFeyUwsaBg">13</a>
+            <a href="https://www.youtube.com/watch?v=7w5n_N2ZD5I">14</a>
+            <a href="https://www.youtube.com/watch?v=IvPNpZmmtPw">15</a>
+            <a href="https://www.youtube.com/watch?v=CLsx_NxWXyU">16</a>
+            <a href="https://www.youtube.com/watch?v=2R70E-kjUvA">17</a>
+            <a href="https://www.youtube.com/watch?v=iQDDaQYET0Y">18</a>
+            <a href="https://www.youtube.com/watch?v=uXwF3JghjM8">19</a>
+            <a href="https://www.youtube.com/watch?v=ec2Kbs6a6aM">20</a>
+            <a href="https://www.youtube.com/watch?v=omDslvXtkNA">21</a>
+            <a href="https://www.youtube.com/watch?v=Dg3KXrl81VQ">22</a>
+            <a href="https://www.youtube.com/watch?v=8rowIfeivf0">23</a>
+            <a href="https://www.youtube.com/watch?v=cHSEQlCiCAE">24</a>
+            <a href="https://www.youtube.com/watch?v=XI5ZlhKg6Yw">25</a>
+            <a href="https://www.youtube.com/watch?v=gJexutT9xgY">26</a>
+            <a href="https://www.youtube.com/watch?v=GKWhXLUUUA0">27</a>
+            <a href="https://www.youtube.com/watch?v=gGO542dVdc0">28</a>
+            <a href="https://www.youtube.com/watch?v=AmDgTscTtXY">29</a>
+            <a href="https://www.youtube.com/watch?v=GTFJ3m0GUk8">30</a>
+            <a href="https://www.youtube.com/watch?v=3ODCcdl2ehE">31</a>
+            <a href="https://www.youtube.com/watch?v=vMY8LhYAQfs">32</a>
+            <a href="https://www.youtube.com/watch?v=pTBvGKvNqTU">33</a>
+            <a href="https://www.youtube.com/watch?v=zWwggHHVt5s">34</a>
+            <a href="https://www.youtube.com/watch?v=pCNCH5SDu4g">35</a>
+            <a href="https://www.youtube.com/watch?v=mmikuvvm5GM">36</a>
+            <a href="https://www.youtube.com/watch?v=C33iOO77xGU">37</a>
+            <a href="https://www.youtube.com/watch?v=EAkZRBy010A">38</a>
+            <a href="https://www.youtube.com/watch?v=ODYw41ypY2Y">39</a>
+            <a href="https://www.youtube.com/watch?v=0U0K-ltGy8o">40</a>
+            <a href="https://www.youtube.com/watch?v=wA5DX0f8d9A">41</a>
+          </div>
         </div>
+      </div>
 
-        <!-- VIDEOS DE SUPER MARIO SUNSHINE -->
-        <div class="contenedor_videos" id="super-mario-sunshine">
-            <div id="super-mario-sunshine-h1" onclick="abrirListaVideos('super-mario-sunshine-lista')"
-                class="h1_container">
-                <h1>Super Mario Sunshine</h1>
-            </div>
-            <div id="super-mario-sunshine-lista" class="lista_videos cerrada">
-                <div id="super-mario-sunshine-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('super-mario-sunshine-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Super Mario Sunshine</h1>
-                </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=UQ-QXDY_ips">1</a>
-                    <a href="https://www.youtube.com/watch?v=noy25FuUiKg">2</a>
-                    <a href="https://www.youtube.com/watch?v=TQneeqFwj8k">3</a>
-                    <a href="https://www.youtube.com/watch?v=hsyUUQlc6vo">4</a>
-                    <a href="https://www.youtube.com/watch?v=OYm42KOm2Bc">5</a>
-                    <a href="https://www.youtube.com/watch?v=bzn7ozMM3Tw">6</a>
-                    <a href="https://www.youtube.com/watch?v=xrse8I7P48c">7</a>
-                    <a href="https://www.youtube.com/watch?v=epj6KwjG5n4">8</a>
-                    <a href="https://www.youtube.com/watch?v=aFUVluHReDo">9</a>
-                    <a href="https://www.youtube.com/watch?v=Ld7a4-nsJ34">10</a>
-                    <a href="https://www.youtube.com/watch?v=zAjiajbHunQ">11</a>
-                    <a href="https://www.youtube.com/watch?v=N96Cy_gAsz8">12</a>
-                    <a href="https://www.youtube.com/watch?v=ojWEs5i9pZs">13</a>
-                    <a href="https://www.youtube.com/watch?v=WebciAksLPk">14</a>
-                    <a href="https://www.youtube.com/watch?v=O9zBK28ZJKA">15</a>
-                    <a href="https://www.youtube.com/watch?v=IAgQU2yx0Z0">16</a>
-                    <a href="https://www.youtube.com/watch?v=eCz765sHcaY">17</a>
-                    <a href="https://www.youtube.com/watch?v=qPf5G3nAUu4">18</a>
-                    <a href="https://www.youtube.com/watch?v=mTfYJKn8sp8">19</a>
-                    <a href="https://www.youtube.com/watch?v=JywOmYdf4c0">20</a>
-                    <a href="https://www.youtube.com/watch?v=m6ZmLt4CNLI">21</a>
-                    <a href="https://www.youtube.com/watch?v=VaTHa5tgq-A">22</a>
-                    <a href="https://www.youtube.com/watch?v=_Q0tdENPpoI">23</a>
-                    <a href="https://www.youtube.com/watch?v=kJYTz79SJVI">24</a>
-                    <a href="https://www.youtube.com/watch?v=06-BPBkj4Es">25</a>
-                    <a href="https://www.youtube.com/watch?v=66HxNVaxSDc">26</a>
-                    <a href="https://www.youtube.com/watch?v=1fvlY140LW4">27</a>
-                    <a href="https://www.youtube.com/watch?v=525sOAmv8LY">28</a>
-                    <a href="https://www.youtube.com/watch?v=SZdm_zkAZxY">29</a>
-                    <a href="https://www.youtube.com/watch?v=n6dNfUAvsT4">30</a>
-                    <a href="https://www.youtube.com/watch?v=AIeRpIhSFUo">31</a>
-                    <a href="https://www.youtube.com/watch?v=OoHMYaGkNeg">32</a>
-                    <a href="https://www.youtube.com/watch?v=xfUZhGG-t0w">33</a>
-                    <a href="https://www.youtube.com/watch?v=NsAid9lfvPU">34</a>
-                </div>
-            </div>
+      <!-- VIDEOS DE SUPER MARIO SUNSHINE -->
+      <div class="contenedor_videos" id="super-mario-sunshine">
+        <div
+          id="super-mario-sunshine-h1"
+          onclick="abrirListaVideos('super-mario-sunshine-lista')"
+          class="h1_container"
+        >
+          <h1>Super Mario Sunshine</h1>
         </div>
+        <div id="super-mario-sunshine-lista" class="lista_videos cerrada">
+          <div id="super-mario-sunshine-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('super-mario-sunshine-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Super Mario Sunshine</h1>
+          </div>
+          <div class="links-container">
+            <a href="https://www.youtube.com/watch?v=UQ-QXDY_ips">1</a>
+            <a href="https://www.youtube.com/watch?v=noy25FuUiKg">2</a>
+            <a href="https://www.youtube.com/watch?v=TQneeqFwj8k">3</a>
+            <a href="https://www.youtube.com/watch?v=hsyUUQlc6vo">4</a>
+            <a href="https://www.youtube.com/watch?v=OYm42KOm2Bc">5</a>
+            <a href="https://www.youtube.com/watch?v=bzn7ozMM3Tw">6</a>
+            <a href="https://www.youtube.com/watch?v=xrse8I7P48c">7</a>
+            <a href="https://www.youtube.com/watch?v=epj6KwjG5n4">8</a>
+            <a href="https://www.youtube.com/watch?v=aFUVluHReDo">9</a>
+            <a href="https://www.youtube.com/watch?v=Ld7a4-nsJ34">10</a>
+            <a href="https://www.youtube.com/watch?v=zAjiajbHunQ">11</a>
+            <a href="https://www.youtube.com/watch?v=N96Cy_gAsz8">12</a>
+            <a href="https://www.youtube.com/watch?v=ojWEs5i9pZs">13</a>
+            <a href="https://www.youtube.com/watch?v=WebciAksLPk">14</a>
+            <a href="https://www.youtube.com/watch?v=O9zBK28ZJKA">15</a>
+            <a href="https://www.youtube.com/watch?v=IAgQU2yx0Z0">16</a>
+            <a href="https://www.youtube.com/watch?v=eCz765sHcaY">17</a>
+            <a href="https://www.youtube.com/watch?v=qPf5G3nAUu4">18</a>
+            <a href="https://www.youtube.com/watch?v=mTfYJKn8sp8">19</a>
+            <a href="https://www.youtube.com/watch?v=JywOmYdf4c0">20</a>
+            <a href="https://www.youtube.com/watch?v=m6ZmLt4CNLI">21</a>
+            <a href="https://www.youtube.com/watch?v=VaTHa5tgq-A">22</a>
+            <a href="https://www.youtube.com/watch?v=_Q0tdENPpoI">23</a>
+            <a href="https://www.youtube.com/watch?v=kJYTz79SJVI">24</a>
+            <a href="https://www.youtube.com/watch?v=06-BPBkj4Es">25</a>
+            <a href="https://www.youtube.com/watch?v=66HxNVaxSDc">26</a>
+            <a href="https://www.youtube.com/watch?v=1fvlY140LW4">27</a>
+            <a href="https://www.youtube.com/watch?v=525sOAmv8LY">28</a>
+            <a href="https://www.youtube.com/watch?v=SZdm_zkAZxY">29</a>
+            <a href="https://www.youtube.com/watch?v=n6dNfUAvsT4">30</a>
+            <a href="https://www.youtube.com/watch?v=AIeRpIhSFUo">31</a>
+            <a href="https://www.youtube.com/watch?v=OoHMYaGkNeg">32</a>
+            <a href="https://www.youtube.com/watch?v=xfUZhGG-t0w">33</a>
+            <a href="https://www.youtube.com/watch?v=NsAid9lfvPU">34</a>
+          </div>
+        </div>
+      </div>
 
-        <!-- VIDEOS DE SLIME RANCHER -->
-        <div class="contenedor_videos" id="slime-rancher">
-            <div id="slime-rancher-h1" onclick="abrirListaVideos('slime-rancher-lista')" class="h1_container">
-                <h1>Slime Rancher</h1>
-            </div>
-            <div id="slime-rancher-lista" class="lista_videos cerrada">
-                <div id="slime-rancher-portada" class="portada-lista-videos">
-                    <div class="close_lista_videos" onclick="abrirListaVideos('slime-rancher-lista')">
-                        <img src="/img/arrow.png" alt="Botón cerrar">
-                        <h1>Volver</h1>
-                    </div>
-                    <h1>Slime Rancher</h1>
-                </div>
-                <div class="links-container">
-                    <a href="https://www.youtube.com/watch?v=6lT5zrAKjxU">1</a>
-                    <a href="https://www.youtube.com/watch?v=1v6IIEU7E7o">2</a>
-                    <a href="https://www.youtube.com/watch?v=IIC4QHDqBs4">3</a>
-                    <a href="https://www.youtube.com/watch?v=trqsWqDAfj8">4</a>
-                    <a href="https://www.youtube.com/watch?v=MhAy30zjrKc">5</a>
-                    <a href="https://www.youtube.com/watch?v=CkWuArqUxTA">6</a>
-                    <a href="https://www.youtube.com/watch?v=7D1efww7cRo">7</a>
-                    <a href="https://www.youtube.com/watch?v=YuOKoAOoX4A">8</a>
-                    <a href="https://www.youtube.com/watch?v=Nu2CcXrWbhs">9</a>
-                    <a href="https://www.youtube.com/watch?v=_R8rsp9xe6o">10</a>
-                    <a href="https://www.youtube.com/watch?v=ZDb5mRlZNPs">11</a>
-                    <a href="https://www.youtube.com/watch?v=VuZyht5aBzc">12</a>
-                    <a href="https://www.youtube.com/watch?v=CP7jCLZTkrI">13</a>
-                    <a href="https://www.youtube.com/watch?v=2y8VPaW_pD8">14</a>
-                </div>
-            </div>
+      <!-- VIDEOS DE SLIME RANCHER -->
+      <div class="contenedor_videos" id="slime-rancher">
+        <div
+          id="slime-rancher-h1"
+          onclick="abrirListaVideos('slime-rancher-lista')"
+          class="h1_container"
+        >
+          <h1>Slime Rancher</h1>
         </div>
+        <div id="slime-rancher-lista" class="lista_videos cerrada">
+          <div id="slime-rancher-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('slime-rancher-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Slime Rancher</h1>
+          </div>
+          <div class="links-container">
+            <a href="https://www.youtube.com/watch?v=6lT5zrAKjxU">1</a>
+            <a href="https://www.youtube.com/watch?v=1v6IIEU7E7o">2</a>
+            <a href="https://www.youtube.com/watch?v=IIC4QHDqBs4">3</a>
+            <a href="https://www.youtube.com/watch?v=trqsWqDAfj8">4</a>
+            <a href="https://www.youtube.com/watch?v=MhAy30zjrKc">5</a>
+            <a href="https://www.youtube.com/watch?v=CkWuArqUxTA">6</a>
+            <a href="https://www.youtube.com/watch?v=7D1efww7cRo">7</a>
+            <a href="https://www.youtube.com/watch?v=YuOKoAOoX4A">8</a>
+            <a href="https://www.youtube.com/watch?v=Nu2CcXrWbhs">9</a>
+            <a href="https://www.youtube.com/watch?v=_R8rsp9xe6o">10</a>
+            <a href="https://www.youtube.com/watch?v=ZDb5mRlZNPs">11</a>
+            <a href="https://www.youtube.com/watch?v=VuZyht5aBzc">12</a>
+            <a href="https://www.youtube.com/watch?v=CP7jCLZTkrI">13</a>
+            <a href="https://www.youtube.com/watch?v=2y8VPaW_pD8">14</a>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-<script src="./script.js"></script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        cargarLinksDesdeJSON('../links/BioshockInfinite.json', 'links-container-bioshock');
-        cargarLinksDesdeJSON('../links/Skyrim.json', 'links-container-skyrim');
-        cargarLinksDesdeJSON('../links/Ditto.json', 'links-container-ditto');
-        cargarLinksDesdeJSON('../links/Gris.json', 'links-container-gris');
-        cargarLinksDesdeJSON('../links/Darkwood.json', 'links-container-darkwood');
-        cargarLinksDesdeJSON('../links/Tinykin.json', 'links-container-tinykin');
-        cargarLinksDesdeJSON('../links/PokemonHojaVerde.json', 'links-container-pokemon-hoja-verde');
-        cargarLinksDesdeJSON('../links/AlbaceteWarrior.json', 'links-container-albacete');
-        cargarLinksDesdeJSON('../links/DarkSouls2.json', 'links-container-dark_souls_2');
-        // FALTA EL RESTO DE JUEGOS
-        cargarLinksDesdeJSON('../links/LeagueOfLegends.json', 'links-container-league-of-legends');
-        // FALTA EL RESTO DE JUEGOS
+  </body>
+  <script src="./script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      cargarLinksDesdeJSON(
+        "../links/SpaceMarine.json",
+        "links-container-spaceMarine"
+      );
+      cargarLinksDesdeJSON(
+        "../links/BioshockInfinite.json",
+        "links-container-bioshock"
+      );
+      cargarLinksDesdeJSON("../links/Skyrim.json", "links-container-skyrim");
+      cargarLinksDesdeJSON("../links/Ditto.json", "links-container-ditto");
+      cargarLinksDesdeJSON("../links/Gris.json", "links-container-gris");
+      cargarLinksDesdeJSON(
+        "../links/Darkwood.json",
+        "links-container-darkwood"
+      );
+      cargarLinksDesdeJSON("../links/Tinykin.json", "links-container-tinykin");
+      cargarLinksDesdeJSON(
+        "../links/PokemonHojaVerde.json",
+        "links-container-pokemon-hoja-verde"
+      );
+      cargarLinksDesdeJSON(
+        "../links/AlbaceteWarrior.json",
+        "links-container-albacete"
+      );
+      cargarLinksDesdeJSON(
+        "../links/DarkSouls2.json",
+        "links-container-dark_souls_2"
+      );
+      // FALTA EL RESTO DE JUEGOS
+      cargarLinksDesdeJSON(
+        "../links/LeagueOfLegends.json",
+        "links-container-league-of-legends"
+      );
+      // FALTA EL RESTO DE JUEGOS
     });
-</script>
+  </script>
 </html>
