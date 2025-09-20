@@ -21,6 +21,7 @@ const abrirListaVideos = (lista) => {
 
 async function cargarLinksDesdeJSON(urlJSON, idContainer) {
   const jsonURL = new URL(urlJSON, window.location.href);
+  console.log(jsonURL.toString());
   try {
     const response = await fetch(jsonURL.toString());
     const data = await response.json();
