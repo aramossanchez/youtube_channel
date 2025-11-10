@@ -191,6 +191,10 @@ a:hover {
 #spaceMarine-portada {
   background-image: url("./img/miniatura-spaceMarine.jpg");
 }
+#toem-h1,
+#toem-portada {
+  background-image: url("./img/miniatura-toem.png");
+}
 
 @media (min-width: 801px) {
   .container {
