@@ -195,6 +195,10 @@ a:hover {
 #toem-portada {
   background-image: url("./img/miniatura-toem.png");
 }
+#ohdemon-h1,
+#ohdemon-portada {
+  background-image: url("./img/miniatura-ohdemon.webp");
+}
 
 @media (min-width: 801px) {
   .container {

@@ -11,6 +11,29 @@
   <body>
     <h1 class="title_app">Youtube de Armandohyeah</h1>
     <div class="container">
+      <!-- VIDEOS DE OH DEMON FIX MY TV -->
+      <div class="contenedor_videos" id="ohdemon-contenedor">
+        <div
+          id="ohdemon-h1"
+          onclick="abrirListaVideos('ohdemon-lista')"
+          class="h1_container"
+        >
+          <h1>Oh Demon Fix My TV</h1>
+        </div>
+        <div id="ohdemon-lista" class="lista_videos cerrada">
+          <div id="ohdemon-portada" class="portada-lista-videos">
+            <div
+              class="close_lista_videos"
+              onclick="abrirListaVideos('ohdemon-lista')"
+            >
+              <img src="/img/arrow.png" alt="Botón cerrar" />
+              <h1>Volver</h1>
+            </div>
+            <h1>Oh Demon Fix My TV</h1>
+          </div>
+          <div id="links-container-ohdemon" class="links-container"></div>
+        </div>
+      </div>
       <!-- VIDEOS DE TOEM -->
       <div class="contenedor_videos" id="toem-contenedor">
         <div
@@ -658,6 +681,7 @@
   <script src="./script.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+      cargarLinksDesdeJSON("links/OhDemon.json", "links-container-ohdemon");
       cargarLinksDesdeJSON("links/Toem.json", "links-container-toem");
       cargarLinksDesdeJSON(
         "links/SpaceMarine.json",
